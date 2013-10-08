@@ -4,29 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Home - ChrisNoland'sSpace</title>
-    <link href="../../css/bootstrap.css" rel="stylesheet"></script>
+    <link href="css/bootstrap.css" rel="stylesheet"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <header>
-            <img src="" alt="Chris Noland's Space Logo" />
-            <ul>
-                <li><h3><a>Home</a></h3></li>
-                <li><h3><a>Portfolio</a></h3></li>
-                <li><h3><a>About</a></h3></li>
-            </ul>
-        </header>
+        <?
+            $this->load->view('header');
+        ?>
         <section>
             <div id="Featured">
-                <img src="" alt="" />
-                <h1>Project</h1>
-                <p>Project Description</p>
-                <p><a></a></p>
+                <div id="flist">
+                    <ul>
+                        <li><h1>Eclipse</h1></li>
+                        <li><p>This project was an assignment for a course over javascript at <b>Full Sail University</b>.
+                        In it I had to take a pre-made store page and add it&#39s functionality, this included:
+                        adding items to the cart by dragging them, being able to add to the quantity of the item,
+                        deleting items one by one, and finally adding a way to clear the entire cart.
+                        This was the final project in the javascript course. </p></li>
+                        <li><p><a>More Projects</a></p></li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <footer>
-            <p></p>
-        </footer>
+        <?
+            $this->load->view('footer');
+        ?>
     </div>
 </body>
 </html>

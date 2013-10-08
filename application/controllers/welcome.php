@@ -19,7 +19,13 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		if(!empty($_GET["action"])){
+			if($_GET["action"]=="home"){
+				$this->load->view("home");
+			}
+		}else{
+			$this->load->view('home');
+		}
 	}
 }
 

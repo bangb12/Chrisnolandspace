@@ -209,15 +209,103 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #000000;
+}
+/* Header Section */
+header h3 a{
+  font-size: 22px;
+  font-family: "Helvetica CY";
+  color: #aeaeae;
+  display: inline;
+  margin: 0 10px;
+}
+header li, header ul{
+  display: inline;
+  list-style-type: none;
+  
+}
+header li{
+  width: 75px;
+  height: 40px;
+}
+header ul{
+  margin-left: 355px;
+}
+header {
+  margin-top: 25px;
+}
+/* Header section end */
+/* Featured Project Section */
+#flist{
+  float: right;
+  background-color: rgba(0,0,0,0.65);
+  height: 450px;
+  width: 320px;
+}
+#Featured{
+  width: 960px;
+  height: 450px;
+  background:url(../img/fp1.jpg)
+}
+#Featured ul{
+  float: right;
+  display: inline;
+  list-style-type: none;
+}
+#Featured li {
+  margin: 0px 10px;
+  margin-top: 20px;
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+#Featured h1{
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Gurmuhki MN";
+}
+#Featured p {
+  color: #aeaeae;
+  font-size: 16px;
+}
+#Featured b{
+  color: #ffffff;
 }
 a {
-  color: #0088cc;
+  color: #59d7ed;
   text-decoration: none;
+  cursor: pointer;
 }
+/* Featured Section End */
+/* Project Container Start */
+.ProjectContainer {
+  width: 310px;
+  margin: 0px 10px;
+  display: inline;
+  float: left;
+}
+.ProjectContainer img{
+  width: 310px;
+}
+.ProjectContainer p {
+  size: 14px;
+}
+.ProjectContainer h2{
+  color: white;
+  font-family: "Gurmukhi MN"; 
+}
+/* Footer Section Start */
+footer p {
+  border-top: 1px solid white;
+  width: 960px;
+  color: #ffffff;
+  margin-top: 20px;
+  opacity: 0.2;
+  clear: both;
+}
+/* Footer Section End */
 a:hover,
 a:focus {
-  color: #005580;
+  color: #ffffff;
   text-decoration: underline;
 }
 .img-rounded {
@@ -534,6 +622,8 @@ a:focus {
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
   *zoom: 1;
 }
 .container-fluid:before,
@@ -639,14 +729,19 @@ h3 {
   line-height: 40px;
 }
 h1 {
-  font-size: 38.5px;
+  font-size: 41px;
+  font-family: "Nueva Std", condensed;
+  color: #52d9ed;
+  display: inline;
 }
 h2 {
   font-size: 31.5px;
 }
 h3 {
   font-size: 24.5px;
+  display: inline;
 }
+
 h4 {
   font-size: 17.5px;
 }
