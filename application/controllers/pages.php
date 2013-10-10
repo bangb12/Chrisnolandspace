@@ -11,6 +11,19 @@
         {
             $this->load->view('portfolio');
         }
+        function more_details($id)
+        {
+            $data = array('id' => $id);
+            $this->load->view('ProjectDetails', $data);
+        }
+        function about_me()
+        {
+            $this->load->view('AboutMe');
+        }
+        function admin()
+        {
+            $this->load->view('Admin');
+        }
     }
 
 ?>

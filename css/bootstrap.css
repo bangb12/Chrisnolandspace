@@ -238,7 +238,7 @@ header {
 /* Featured Project Section */
 #flist{
   float: right;
-  background-color: rgba(0,0,0,0.65);
+  background-color: rgba(0,0,0,0.75);
   height: 450px;
   width: 320px;
 }
@@ -276,7 +276,7 @@ a {
   cursor: pointer;
 }
 /* Featured Section End */
-/* Project Container Start */
+/* Project Section Start */
 .ProjectContainer {
   width: 310px;
   margin: 0px 10px;
@@ -286,12 +286,58 @@ a {
 .ProjectContainer img{
   width: 310px;
 }
-.ProjectContainer p {
+.ProjectContainer p, #MoreDetails p {
   size: 14px;
 }
-.ProjectContainer h2{
+.ProjectContainer h2, #MoreDetails h2{
   color: white;
   font-family: "Gurmukhi MN"; 
+}
+#MoreDetails img {
+  display: block;
+  width: 840px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Project Section End */
+/* About Me Section Start */
+#AboutMe img{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 100px;
+}
+#AboutMe h2{
+  background-color: #636363;
+  display: inline;
+  box-shadow: 2px 2px 0px #868686 inset;
+  color: white;
+  font-family: "Gurmukhi MN";
+}
+#AboutMe p {
+  color: #7d7a7a;
+}
+#AboutMe ul {
+  list-style: none;
+  margin-left: 0px;
+}
+/* Admin section start */
+#newproject {
+  display: block;
+  text-align: center;
+}
+#newproject input, #newproject textarea {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#newproject h2 {
+  text-decoration: underline;
+}
+#newproject h2, #newproject h3 {
+  color: white;
 }
 /* Footer Section Start */
 footer p {
@@ -301,6 +347,10 @@ footer p {
   margin-top: 20px;
   opacity: 0.2;
   clear: both;
+}
+.link{
+  border: none;
+  display: inline;
 }
 /* Footer Section End */
 a:hover,

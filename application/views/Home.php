@@ -21,7 +21,7 @@
                         adding items to the cart by dragging them, being able to add to the quantity of the item,
                         deleting items one by one, and finally adding a way to clear the entire cart.
                         This was the final project in the javascript course. </p></li>
-                        <li><p><a>More Projects</a></p></li>
+                        <li><p><a href="http://localhost:8888/Chrisnolandspace/index.php/pages/portfolio/">More Projects</a></p></li>
                     </ul>
                 </div>
             </div>
