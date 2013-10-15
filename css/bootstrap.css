@@ -267,7 +267,7 @@ header {
   color: #aeaeae;
   font-size: 16px;
 }
-#Featured b{
+#Featured strong{
   color: #ffffff;
 }
 a {
@@ -288,6 +288,7 @@ a {
 }
 .ProjectContainer p, #MoreDetails p {
   size: 14px;
+  color: #aeaeae;
 }
 .ProjectContainer h2, #MoreDetails h2{
   color: white;
@@ -317,6 +318,7 @@ a {
 }
 #AboutMe p {
   color: #7d7a7a;
+  width: 690px;
 }
 #AboutMe ul {
   list-style: none;

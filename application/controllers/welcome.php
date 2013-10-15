@@ -21,10 +21,14 @@ class Welcome extends CI_Controller {
 	{
 		if(!empty($_GET["action"])){
 			if($_GET["action"]=="home"){
+				$this->load->view('header');
 				$this->load->view("home");
+				$this->load->view('footer');
 			}
 		}else{
+			$this->load->view('header');
 			$this->load->view('home');
+			$this->load->view('footer');
 		}
 	}
 }

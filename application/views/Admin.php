@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Projects - ChrisNoland'sSpace</title>
-    <link href="../../css/bootstrap.css" rel="stylesheet"></script>
-</head>
-<body>
-    <div class="container-fluid">
-        <?
-            $this->load->view('header');
-        ?>
         <section>
             <form method="post" id="newproject">
                 <h2>Admin Controls</h2>
@@ -22,9 +9,3 @@
                 <input type="submit" value="submit"/>
             </form>
         </section>
-        <?
-            $this->load->view('footer');
-        ?>
-    </div>
-</body>
-</html>
