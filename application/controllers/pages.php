@@ -30,6 +30,7 @@
         }
         function admin()
         {
+            $this->load->helper('form');
             $this->load->view('header');
             $this->load->view('Admin');
             $this->load->view('footer');

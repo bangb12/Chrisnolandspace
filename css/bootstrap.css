@@ -325,20 +325,25 @@ a {
   margin-left: 0px;
 }
 /* Admin section start */
-#newproject {
+#newproject, #changefeatured {
   display: block;
+  float: left;
   text-align: center;
+  margin-top: 25px;
 }
-#newproject input, #newproject textarea {
+#changefeatured {
+  margin-left: 250px;
+}
+#newproject input, #newproject textarea, #changefeatured input, #changefeatured textarea {
   display: block;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-#newproject h2 {
+#newproject h2, #changefeatured h2 {
   text-decoration: underline;
 }
-#newproject h2, #newproject h3 {
+#newproject h2, #newproject h3, #changefeatured h2, #changefeatured h3 {
   color: white;
 }
 /* Footer Section Start */
