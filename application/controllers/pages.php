@@ -4,8 +4,9 @@
     //loads views based on what page needs to be opened
         function home()
         {
-            $this->load->view('header');
-            $this->load->view('home');
+            $result = $this->db->get('FeaturedProject');
+	    $featured['featured'] = $result->result();
+            $this->load->view('home', $featured);
             $this->load->view('footer');
         }
         //Id is passed through URL to determine which detail needs to be opened
