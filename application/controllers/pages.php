@@ -12,8 +12,10 @@
         //Id is passed through URL to determine which detail needs to be opened
         function portfolio()
         {
+            $result = $this->db->get('Projects');
+            $projects['projects'] = $result->result();
             $this->load->view('header');
-            $this->load->view('portfolio');
+            $this->load->view('portfolio', $projects);
             $this->load->view('footer');
         }
         function more_details($id)

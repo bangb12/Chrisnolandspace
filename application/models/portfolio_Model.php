@@ -16,5 +16,22 @@
             $this->db->update('FeaturedProject');
             header("Location: $home");
         }
+        function addProject($pname, $description, $limage, $simage, $ldescription, $imagealt){
+            $portfolio = 'http://localhost:8888/Chrisnolandspace/index.php/pages/portfolio/';
+            $data = array(
+                'pname' => $pname,
+                'description' => $description,
+                'limage' => $limage,
+                'simage' => $simage,
+                'ldescription' => $ldescription,
+                'imagealt' => $imagealt
+            );
+            $this->db->set($data);
+            $this->db->insert('Projects');
+            header("Location: $portfolio");
+        }
+        function loadDetails(){
+            
+        }
     }
 ?>
