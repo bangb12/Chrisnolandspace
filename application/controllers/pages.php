@@ -9,20 +9,12 @@
             $this->load->view('home', $featured);
             $this->load->view('footer');
         }
-        //Id is passed through URL to determine which detail needs to be opened
         function portfolio()
         {
             $result = $this->db->get('Projects');
             $projects['projects'] = $result->result();
             $this->load->view('header');
             $this->load->view('portfolio', $projects);
-            $this->load->view('footer');
-        }
-        function more_details($id)
-        {
-            $data = array('id' => $id);
-            $this->load->view('header');
-            $this->load->view('ProjectDetails', $data);
             $this->load->view('footer');
         }
         function about_me()

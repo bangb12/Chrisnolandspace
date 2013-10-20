@@ -30,8 +30,10 @@
             $this->db->insert('Projects');
             header("Location: $portfolio");
         }
-        function loadDetails(){
-            
+        function loadDetails($id){
+            $this->db->where('id', $id);
+            $data = $this->db->get('Projects');            
+            return $data->result();
         }
     }
 ?>

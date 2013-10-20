@@ -9,7 +9,9 @@
                     echo '</h2>';
                     echo '<p><em>';
                     echo $r->description;
-                    echo '</em></p><p><a href="?action=details">';
+                    echo '</em></p><p><a href=http://localhost:8888/Chrisnolandspace/index.php/portfolio_Controller/details/';
+                    echo $r->id;
+                    echo ">";
                     echo 'More Details...</a></p>';
                     echo '</div>';
                 };

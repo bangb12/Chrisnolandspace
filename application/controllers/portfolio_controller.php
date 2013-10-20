@@ -19,9 +19,14 @@
             $ldescription = $this->input->post('ldescription');
             $imagealt = $this->input->post('imagealt');
             $this->portfolio_model->addProject($pname, $description, $limage, $simage, $ldescription, $imagealt);
-            if ($_GET["action"]=="details"){
-                
-            };
+        }
+        function details(){
+            $this->load->model('portfolio_model');
+            $id = $this->uri->segment(3);
+            $result['result'] = $this->portfolio_model->loadDetails($id);
+            $this->load->view('header');
+            $this->load->view('ProjectDetails', $result);
+            $this->load->view('footer');
         }
     }
 ?>
