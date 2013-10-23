@@ -1,5 +1,5 @@
         <section>
-                <!------  This will be created through php coding once the admin panel is implemented   ----->
+                <!------Uses results from controller/model to echo out each project located in the database------>
                 <?  foreach($projects as $r){
                     echo '<div class=ProjectContainer>';
                     echo '<h3>';

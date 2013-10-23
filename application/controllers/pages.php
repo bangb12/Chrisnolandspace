@@ -4,6 +4,7 @@
     //loads views based on what page needs to be opened
         function home()
         {
+            //Adds data from FeaturedProject table to be sent into the home view
             $result = $this->db->get('FeaturedProject');
 	    $featured['featured'] = $result->result();
             $this->load->view('home', $featured);
@@ -11,6 +12,7 @@
         }
         function portfolio()
         {
+            //Adds data from the Projects table to be sent into the portfolio view
             $result = $this->db->get('Projects');
             $projects['projects'] = $result->result();
             $this->load->view('header');

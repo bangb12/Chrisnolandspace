@@ -1,5 +1,6 @@
         <section>
             <form method="post" id="newproject" action="<? echo base_url(); ?>index.php/portfolio_Controller/portfolio/">
+                <!---Form that allows you to add a new project--->
                 <h2>Add New Project</h2>
                 <h3>Project Name:</h3> <input type="text" name="pname" />
                 <h3>Description:</h3> <input type="text" name="description" />
@@ -10,6 +11,7 @@
                 <input type="submit" value="submit"/>
             </form>
             <form method="post" id="changefeatured" action="<? echo base_url(); ?>index.php/portfolio_Controller/featured/">
+            <!----Form that allows you to change the featured project--->
                 <h2>Change Featured Project</h2>
                 <h3>Project Name:</h3> <input type="text" name="pname" />
                 <h3>Description:</h3> <textarea rows="5" name="description"></textarea>

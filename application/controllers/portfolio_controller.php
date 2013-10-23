@@ -4,6 +4,7 @@
             parent::__construct();
         }
         function featured(){
+            //Sets up the data to be sent to portfolio_model for the update featured function
             $this->load->model('portfolio_model');
             $pname = $this->input->post('pname');
             $description = $this->input->post('description');
@@ -11,6 +12,7 @@
             $this->portfolio_model->updateFeatured($pname, $description, $fp);
         }
         function portfolio(){
+            //Sets up the data to be sent to portfolio_model for the add project function
             $this->load->model('portfolio_model');
             $pname = $this->input->post('pname');
             $description = $this->input->post('description');
@@ -21,6 +23,7 @@
             $this->portfolio_model->addProject($pname, $description, $limage, $simage, $ldescription, $imagealt);
         }
         function details(){
+            //Sets up the data to be sent to portfolio_model, and returns the result of loadDetails. Loads views based on result
             $this->load->model('portfolio_model');
             $id = $this->uri->segment(3);
             $result['result'] = $this->portfolio_model->loadDetails($id);

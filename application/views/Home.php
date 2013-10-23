@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>ChrisNolandsSpace</title>
+    <!--Uses data from controller/model to set background image of the featured project area-->
     <? foreach($featured as $r){
         $fp = $r->fp;
     };?>
@@ -37,6 +38,7 @@
             <div id="Featured">
                 <div id="flist">
                     <ul>
+                        <!---Uses data from controller/model to echo out correct featured project text--->
                         <?  foreach($featured as $r){
                                 echo '<h1>';
                                 echo $r->pname;
