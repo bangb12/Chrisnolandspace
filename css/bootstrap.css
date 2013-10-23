@@ -280,6 +280,7 @@ a {
 /* Project Section Start */
 .ProjectContainer {
   width: 310px;
+  height: 450px;
   margin: 0px 10px;
   display: inline;
   float: left;
@@ -290,14 +291,13 @@ a {
 .ProjectContainer p, #MoreDetails p {
   size: 14px;
   color: #aeaeae;
-  max-width: 800px;
 }
 .ProjectContainer h2, #MoreDetails h2{
   color: white;
   font-family: "Gurmukhi MN";
-  max-width: 500px
 }
 #MoreDetails p, #MoreDetails h2{
+  max-width: 800px;
   margin: 0px 75px;
 }
 #MoreDetails img {
