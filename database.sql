@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 17, 2013 at 11:06 PM
+-- Generation Time: Oct 23, 2013 at 07:11 PM
 -- Server version: 5.5.29
 -- PHP Version: 5.4.10
 
@@ -33,7 +33,7 @@ CREATE TABLE `FeaturedProject` (
 --
 
 INSERT INTO `FeaturedProject` (`id`, `pname`, `description`, `fp`) VALUES
-(1, 'Eclipse', 'This project was an assignment for a course over javascript at <strong>Full Sail University</strong>. In it I had to take a pre-made store page and add it’s functionality, this included: adding items to the cart by dragging them, being able to add to the quantity of the item, deleting items one by one, and finally adding a way to clear the entire cart. This was the final project in the javascript course.', 'img/fp1.jpg');
+(1, 'Spring Lake', 'Random Description of something', 'img/fp2.jpg');
 
 -- --------------------------------------------------------
 
@@ -43,10 +43,19 @@ INSERT INTO `FeaturedProject` (`id`, `pname`, `description`, `fp`) VALUES
 
 CREATE TABLE `Projects` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `pname` varchar(30) DEFAULT NULL,
-  `description` int(50) DEFAULT NULL,
-  `limage` int(100) DEFAULT NULL,
-  `simage` int(100) DEFAULT NULL,
-  `ldescription` int(250) DEFAULT NULL,
+  `pname` varchar(50) DEFAULT NULL,
+  `description` varchar(250) DEFAULT NULL,
+  `limage` varchar(250) DEFAULT NULL,
+  `simage` varchar(250) DEFAULT NULL,
+  `ldescription` varchar(1500) DEFAULT NULL,
+  `imagealt` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Dumping data for table `Projects`
+--
+
+INSERT INTO `Projects` (`id`, `pname`, `description`, `limage`, `simage`, `ldescription`, `imagealt`) VALUES
+(1, 'Project 1', 'A small game created to show my skills in Adobe Flash.', 'img/portfolio/p1l.jpg', 'img/portfolio/p1s.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n                                 Phasellus purus ante, tristique id nulla vitae, hendrerit varius magna.\n                                 Vestibulum libero eros, congue eget imperdiet vel, bibendum at velit. Nulla laoreet est nulla,\n                                 consequat tristique velit tristique non. In ac sollicitudin justo, eget ornare velit.\n                                 Aliquam scelerisque ligula eget lectus pretium vehicula. Curabitur lacinia a dolor id blandit.\n                                 Fusce ut sapien ligula. Donec venenatis mi tortor, in laoreet nulla volutpat et.\n                                 Quisque vitae posuere nunc. Nullam condimentum neque vel mattis tempus.\n                                 Cras cursus lacus in massa iaculis hendrerit et faucibus nisl. Duis libero orci,\n                                 faucibus et nibh non, consequat adipiscing lectus. Lorem ipsum dolor sit amet,\n                                 consectetur adipiscing elit. ', 'Image of a flash based game'),
+(2, 'Project 2', 'An application I created using a movie database API. You can search for movies and get info.', 'img/portfolio/p2l.jpg', 'img/portfolio/p2s.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n                                 Phasellus purus ante, tristique id nulla vitae, hendrerit varius magna.\n                                 Vestibulum libero eros, congue eget imperdiet vel, bibendum at velit. Nulla laoreet est nulla,\n                                 consequat tristique velit tristique non. In ac sollicitudin justo, eget ornare velit.\n                                 Aliquam scelerisque ligula eget lectus pretium vehicula. Curabitur lacinia a dolor id blandit.\n                                 Fusce ut sapien ligula. Donec venenatis mi tortor, in laoreet nulla volutpat et.\n                                 Quisque vitae posuere nunc. Nullam condimentum neque vel mattis tempus.\n                                 Cras cursus lacus in massa iaculis hendrerit et faucibus nisl. Duis libero orci,\n                                 faucibus et nibh non, consequat adipiscing lectus. Lorem ipsum dolor sit amet,\n                                 consectetur adipiscing elit. ', 'Image of MediaZSearch application');
